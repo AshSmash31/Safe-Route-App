@@ -113,12 +113,18 @@ export default function TabTwoScreen() {
 
       {/* 🔵 Map Button Section */}
       <ThemedView style={styles.mapButtonContainer}>
-        <ThemedText type="subtitle">Live Safety Features</ThemedText>
-        <ThemedText>Use our real-time map to check for nearby incidents.</ThemedText>
-        <Pressable onPress={() => router.push('/map')} style={styles.mapButton}>
-          <Text style={styles.mapButtonText}>View Crime Map</Text>
-        </Pressable>
-      </ThemedView>
+  <ThemedText type="subtitle">Live Safety Features</ThemedText>
+  <ThemedText>Use our real-time map to check for nearby incidents.</ThemedText>
+  
+  <Pressable onPress={() => router.push('/map')} style={styles.mapButton}>
+    <Text style={styles.mapButtonText}>View Crime Map</Text>
+  </Pressable>
+
+  <Pressable onPress={() => router.push('/report')} style={[styles.mapButton, { backgroundColor: '#d9534f' }]}>
+    <Text style={styles.mapButtonText}>Report a Crime</Text>
+  </Pressable>
+</ThemedView>
+
 
       {/* 🔵 Crime Filters Section */}
       <ThemedView style={styles.filterContainer}>

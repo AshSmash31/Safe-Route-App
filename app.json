@@ -20,7 +20,7 @@
       "edgeToEdgeEnabled": true,
       "config": {
         "googleMaps": {
-          "apiKey": "AIzaSyDp2sWaBCBVR0P3katwTumON1JbB5Iw1aA&q"
+          "apiKey": ""
         }
       },
       "package": "com.devin_t.SafeRouteApp"

@@ -32,24 +32,26 @@ export default function MapScreen() {
   return (
     <View style={styles.container}>
       <MapView
-        style={styles.map}
-        showsUserLocation={true}
-        initialRegion={{
-          latitude: location.coords.latitude,
-          longitude: location.coords.longitude,
-          latitudeDelta: 0.01,
-          longitudeDelta: 0.01,
-        }}
-      >
-        <Marker
-          coordinate={{
-            latitude: location.coords.latitude,
-            longitude: location.coords.longitude,
-          }}
-          title="You are here"
-          description="Current location"
-        />
-      </MapView>
+  provider="google"
+  style={styles.map}
+  showsUserLocation={true}
+  initialRegion={{
+    latitude: location.coords.latitude,
+    longitude: location.coords.longitude,
+    latitudeDelta: 0.01,
+    longitudeDelta: 0.01,
+  }}
+>
+  <Marker
+    coordinate={{
+      latitude: location.coords.latitude,
+      longitude: location.coords.longitude,
+    }}
+    title="You are here"
+    description="Current location"
+  />
+</MapView>
+
     </View>
   );
 }

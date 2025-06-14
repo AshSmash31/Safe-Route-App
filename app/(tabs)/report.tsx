@@ -4,6 +4,7 @@ import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { Alert, Button, StyleSheet, Text, TextInput } from 'react-native';
 
+
 export default function ReportCrimeScreen() {
   const [type, setType] = useState('');
   const [description, setDescription] = useState('');
